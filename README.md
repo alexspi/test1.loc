@@ -22,8 +22,14 @@ npn run dev or npm run prod
 ```terminal
 php artisan migrate --seed
 ```
+```terminal
+php artisan storage:link
+```
 
 
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## PS
+сделал больше чем надо, помимо RestApi Реализовал веб интерфейс
