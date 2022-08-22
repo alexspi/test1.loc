@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Super Admin',
                 'email' => 'admin@admin.loc',
-                'role' => 1,
+                'role_id' => 1,
                 'email_verified_at' => now(),
                 'password' => Hash::make('password'),
                 'remember_token' => Str::random(10),
@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => fake()->name(),
                 'email' => fake()->unique()->safeEmail(),
-                'role' => 2,
+                'role_id' => 2,
                 'email_verified_at' => now(),
                 'password' => Hash::make(env('PASS1')),
                 'remember_token' => Str::random(10),
@@ -36,7 +36,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => fake()->name(),
                 'email' => fake()->unique()->safeEmail(),
-                'role' => 2,
+                'role_id' => 2,
                 'email_verified_at' => now(),
                 'password' => Hash::make(env('PASS2')),
                 'remember_token' => Str::random(10),
@@ -44,7 +44,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => fake()->name(),
                 'email' => fake()->unique()->safeEmail(),
-                'role' => 3,
+                'role_id' => 3,
                 'email_verified_at' => now(),
                 'password' => Hash::make(env('PASS3')),
                 'remember_token' => Str::random(10),
@@ -52,7 +52,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => fake()->name(),
                 'email' => fake()->unique()->safeEmail(),
-                'role' => 3,
+                'role_id' => 3,
                 'email_verified_at' => now(),
                 'password' => Hash::make(env('PASS4')),
                 'remember_token' => Str::random(10),

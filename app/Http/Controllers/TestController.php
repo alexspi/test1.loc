@@ -8,17 +8,13 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use App\Http\Services\SearchTown;
-use App\Models\User;
 use App\Models\Application;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Traits\ApiHelper;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Storage;
 use Carbon\Carbon;
 
 class TestController extends Controller
 {
-    use ApiHelper;
+
 
     public function __construct(SearchTown $search)
     {
@@ -53,7 +49,7 @@ class TestController extends Controller
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|Factory|View
      */
-    public function applicationlist(Request $request)
+    public function applicationList(Request $request)
     {
 
         if (Auth::user()->role_id == 3) {

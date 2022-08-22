@@ -13,7 +13,7 @@ use App\Http\Traits\ApiHelper;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Validator;
 
-class TestController extends Controller
+class TestApiController extends Controller
 {
     use ApiHelper;
 

@@ -25,6 +25,9 @@ php artisan migrate --seed
 ```terminal
 php artisan storage:link
 ```
+```terminal
+php artisan migrate --seed
+```
 
 
 ## License

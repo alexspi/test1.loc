@@ -33,12 +33,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('townlist', [TestController::class, 'town'])->name('listtown');
 Route::post('townlist', [TestController::class, 'gettown'])->name('gettown');
 
-Route::group(['middleware' => 'auth:sanctum'], function () {
+Route::group(['middleware' => 'auth'], function () {
 
-    Route::get('application', [TestController::class, 'applicationlist'])->name('listapp');
+    Route::get('application', [TestController::class, 'applicationList'])->name('listapplications');
     Route::post('application', [TestController::class, 'applicationCreate'])->name('createapplications');
     Route::delete('application/{id}', [TestController::class, 'applicationDelete'])->name('delapplications');
-    Route::post('application', [TestController::class, 'applicationFilter'])->name('filterapplications');
+    Route::post('application/filter', [TestController::class, 'applicationFilter'])->name('filterapplications');
 
 });
 

@@ -32,7 +32,7 @@
                             <a class="nav-link"  href="{{route('listtown')}}">Поиск</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('listapp')}}">Заявки</a>
+                            <a class="nav-link" href="{{route('listapplications')}}">Заявки</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('createtoken')}}">Создать токен</a>
